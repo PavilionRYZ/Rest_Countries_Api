@@ -23,7 +23,9 @@
       <div
         class="header-content flex justify-between w-full max-w-screen-2xl mx-auto"
       >
-        <h2 class="text-lg md:text-2xl font-bold">Where in the world?</h2>
+        <h2 class="text-lg md:text-2xl font-bold">
+          <a href="/">Where in the world?</a>
+        </h2>
         <p class="flex text-base md:text-lg items-center gap-2 font-medium">
           <i class="fa-regular fa-moon transform rotate-75"></i>Dark Mode
         </p>
@@ -34,7 +36,7 @@
         class="search_filter_container flex flex-wrap justify-start md:justify-between items-center gap-8 md:gap-16 w-full max-w-screen-2xl mx-auto my-4 md:my-6 md:mt-3"
       >
         <div
-          class="search flex items-center gap-2  px-4 py-3 rounded-lg shadow-lg outline-none bg-white text-gray-500 w-full max-w-md"
+          class="search flex items-center gap-2 px-4 py-3 rounded-lg shadow-lg outline-none bg-white text-gray-500 w-full max-w-md"
         >
           <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
           <input
@@ -44,7 +46,11 @@
           />
         </div>
         <div class="filter">
-          <select name="region" class="select  px-6 py-3 rounded-lg shadow-lg outline-none bg-white text-gray-500 w-full max-w-md" title="Select a region">
+          <select
+            name="region"
+            class="select-filter px-6 py-3 rounded-lg shadow-lg outline-none bg-white text-gray-500 w-full max-w-md"
+            title="Select a region"
+          >
             <option hidden>Filter by Region</option>
             <option value="Africa">Africa</option>
             <option value="America">America</option>
