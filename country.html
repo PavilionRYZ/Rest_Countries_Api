@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https:cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="country.js" defer></script>
+    <title>Country</title>
+  </head>
+  <body>
+    <header class="shadow-[0px_2px_4px_0px_rgba(0,0,0,0.20)] p-4">
+      <div
+        class="header-content flex justify-between w-full max-w-screen-2xl mx-auto"
+      >
+        <h2 class="text-lg md:text-2xl font-bold">Where in the world?</h2>
+        <p class="flex text-base md:text-lg items-center gap-2 font-medium">
+          <i class="fa-regular fa-moon transform rotate-75"></i>Dark Mode
+        </p>
+      </div>
+    </header>
+    <main class="p-6 md:p-8 w-full max-w-screen-2xl mx-auto my-5">
+      <span
+        class="back-btn cursor-pointer inline-flex items-center border-2 border-gray-300 px-6 py-2 md:my-10 rounded-md bg-white text-gray-700 hover:bg-gray-100"
+      >
+        <i class="fa-solid fa-arrow-left mr-2"></i>
+        Back
+      </span>
+
+      <div
+        class="country-details flex flex-col md:flex-row justify-center md:items-center gap-8 w-full max-w-screen-2xl mx-auto my-4"
+      >
+        <div class="flag-div w-full md:w-1/2 lg:w-2/5">
+          <img src="" class="w-full h-auto rounded-md shadow-md" alt="flag" />
+        </div>
+        <div
+          class="info-div flex flex-col gap-6 justify-start md:ml-16 items-start w-full md:w-1/2 lg:w-3/5"
+        >
+          <h2 class="country-name text-3xl md:text-4xl font-extrabold"></h2>
+          <div
+            class="country-info flex flex-col md:flex-row justify-evenly gap-6"
+          >
+            <div class="left-div flex flex-col gap-2">
+              <p class="flex">
+                <b>Native Name:</b>
+                <span class="native-name"></span>
+              </p>
+              <p class="flex">
+                <b>Population:</b>
+                <span class="population"></span>
+              </p>
+              <p class="flex">
+                <b>Region:</b>
+                <span class="region"></span>
+              </p>
+              <p class="flex">
+                <b>Sub Region:</b>
+                <span class="subregion"></span>
+              </p>
+              <p class="flex">
+                <b>Capital:</b>
+                <span class="capital"></span>
+              </p>
+            </div>
+            <div class="right-div flex flex-col gap-2">
+              <p class="flex">
+                <b>Top Level Domain:</b>
+                <span class="top-level-domain pl-2"></span>
+              </p>
+              <p class="flex">
+                <b>Currencies:</b>
+                <span class="currencies"></span>
+              </p>
+              <p class="flex">
+                <b>Languages:</b>
+                <span class="languages"></span>
+              </p>
+            </div>
+          </div>
+          <div class="border-country flex flex-wrap items-center gap-2">
+            <b>Border Countries:</b>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
