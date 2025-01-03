@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <script src="theme.js" defer></script>
   </head>
   <body>
     <header class="shadow-[0px_2px_4px_0px_rgba(0,0,0,0.20)] p-4">
@@ -26,9 +27,14 @@
         <h2 class="text-lg md:text-2xl font-bold">
           <a href="/">Where in the world?</a>
         </h2>
-        <p class="flex text-base md:text-lg items-center gap-2 font-medium">
-          <i class="fa-regular fa-moon transform rotate-75"></i>Dark Mode
-        </p>
+        <button
+          id="theme-toggle"
+          class="flex text-base md:text-lg items-center gap-2 font-medium"
+          aria-label="Toggle Dark Mode"
+        >
+          <i id="theme-icon" class="fa-regular fa-moon transform rotate-75"></i>
+          <span id="theme-label">Dark Mode</span>
+        </button>
       </div>
     </header>
     <main class="p-6 md:p-8">
@@ -42,7 +48,7 @@
           <input
             placeholder="Search for a country..."
             type="text"
-            class="flex-1 bg-transparent overflow-hidden outline-none text-gray-700 placeholder-gray-400"
+            class="flex-1 bg-transparent overflow-hidden outline-none text-inherit placeholder-gray-400"
           />
         </div>
         <div class="filter">
