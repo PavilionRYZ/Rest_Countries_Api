@@ -31,6 +31,30 @@
     </header>
     <main class="p-6 md:p-8">
       <div
+        class="search_filter_container flex flex-wrap justify-start md:justify-between items-center gap-8 md:gap-16 w-full max-w-screen-2xl mx-auto my-4 md:my-6 md:mt-3"
+      >
+        <div
+          class="search flex items-center gap-2  px-4 py-3 rounded-lg shadow-lg outline-none bg-white text-gray-500 w-full max-w-md"
+        >
+          <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
+          <input
+            placeholder="Search for a country..."
+            type="text"
+            class="flex-1 bg-transparent overflow-hidden outline-none text-gray-700 placeholder-gray-400"
+          />
+        </div>
+        <div class="filter">
+          <select name="region" class="select  px-6 py-3 rounded-lg shadow-lg outline-none bg-white text-gray-500 w-full max-w-md" title="Select a region">
+            <option hidden>Filter by Region</option>
+            <option value="Africa">Africa</option>
+            <option value="America">America</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+          </select>
+        </div>
+      </div>
+      <div
         class="countries-container flex flex-wrap justify-center md:justify-between items-center gap-8 md:gap-16 w-full max-w-screen-2xl mx-auto my-1 md:mt-3"
       ></div>
     </main>
